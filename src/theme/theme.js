@@ -23,8 +23,7 @@ export default {
   breakpoints: {
     last: "253px",
     extraSmall: "400px",
-    small: "660px",
-    mediumSmall: "720px",
+    small: "720px",
     medium: "1000px",
     large: "1400px"
   },

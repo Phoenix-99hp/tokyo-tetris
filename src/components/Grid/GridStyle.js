@@ -52,7 +52,7 @@ export const StyledGridContainer = styled.div`
   border-top: 1px solid ${({ theme }) => theme.colors.gridBorder};
   border-left: 1px solid ${({ theme }) => theme.colors.gridBorder};
 
-  @media screen and (max-height: 800px) {
+  @media screen and (max-height: 830px) {
     grid-template-rows: repeat(
       20,
       ${({ theme }) => theme.squareSizes.medium}px
@@ -188,10 +188,10 @@ export const StyledNextShape = styled.div`
   height: ${({ controls }) => (controls ? "fit-content" : "130px")};
   // height: fit-content;
   // width: fit-content;
-  width: 200px;
-  width: 130px;
+  // width: 200px;
+  width: 150px;
   box-sizing: content-box;
-  height: 100px;
+  height: 140px;
   ${({ border }) =>
     border &&
     css`
@@ -238,15 +238,26 @@ export const StyledNextShapeGrid = styled.div`
     css`
       grid-template-rows: repeat(
         ${({ rows }) => rows},
-        ${({ theme }) => theme.squareSizes.medium}px
+        ${({ theme }) => theme.squareSizes.large}px
       );
       grid-template-columns: repeat(
         ${({ cols }) => cols},
-        ${({ theme }) => theme.squareSizes.medium}px
+        ${({ theme }) => theme.squareSizes.large}px
       );
     `};
-  @media screen and (max-width: ${({ theme }) => theme.breakpoints.medium}),
-    screen and (max-height: ${({ theme }) => theme.totalHeight.medium}) {
+
+  @media screen and (max-height: 830px) {
+    grid-template-rows: repeat(
+      ${({ rows }) => rows},
+      ${({ theme }) => theme.squareSizes.medium}px
+    );
+    grid-template-columns: repeat(
+      ${({ cols }) => cols},
+      ${({ theme }) => theme.squareSizes.medium}px
+    );
+  }
+    
+  @media screen and (max-height: ${({ theme }) => theme.totalHeight.medium}) {
     ${({ color }) =>
       color &&
       css`
