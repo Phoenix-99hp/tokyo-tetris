@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tokyo-tetris/static/css/main.37b01bc2.chunk.css",
-    "main.js": "/tokyo-tetris/static/js/main.fe772e53.chunk.js",
-    "main.js.map": "/tokyo-tetris/static/js/main.fe772e53.chunk.js.map",
+    "main.js": "/tokyo-tetris/static/js/main.d06bcb34.chunk.js",
+    "main.js.map": "/tokyo-tetris/static/js/main.d06bcb34.chunk.js.map",
     "runtime-main.js": "/tokyo-tetris/static/js/runtime-main.d52f72b5.js",
     "runtime-main.js.map": "/tokyo-tetris/static/js/runtime-main.d52f72b5.js.map",
     "static/js/2.82116f64.chunk.js": "/tokyo-tetris/static/js/2.82116f64.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.d52f72b5.js",
     "static/js/2.82116f64.chunk.js",
     "static/css/main.37b01bc2.chunk.css",
-    "static/js/main.fe772e53.chunk.js"
+    "static/js/main.d06bcb34.chunk.js"
   ]
 }
