@@ -18,6 +18,7 @@ export const StyledOuter = styled.div`
   justify-content: center;
   align-self: start;
   height: fit-content;
+  padding: 10px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.small}) {
     order: 2;
@@ -43,16 +44,27 @@ export const StyledInner = styled.div`
 export const StyledGridContainer = styled.div`
   display: grid;
   box-sizing: border-box;
-  grid-template-rows: repeat(20, ${({ theme }) => theme.squareSizes.medium}px);
+  grid-template-rows: repeat(20, ${({ theme }) => theme.squareSizes.large}px);
   grid-template-columns: repeat(
     10,
-    ${({ theme }) => theme.squareSizes.medium}px
+    ${({ theme }) => theme.squareSizes.large}px
   );
   border-top: 1px solid ${({ theme }) => theme.colors.gridBorder};
   border-left: 1px solid ${({ theme }) => theme.colors.gridBorder};
 
-  @media screen and (max-height: ${({ theme }) => theme.totalHeight.medium}),
-    screen and (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+  @media screen and (max-height: 800px) {
+    grid-template-rows: repeat(
+      20,
+      ${({ theme }) => theme.squareSizes.medium}px
+    );
+    grid-template-columns: repeat(
+      10,
+      ${({ theme }) => theme.squareSizes.medium}px
+    );
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints.small}),
+    screen and (max-height: ${({ theme }) => theme.totalHeight.medium}), {
     grid-template-rows: repeat(20, ${({ theme }) => theme.squareSizes.small}px);
     grid-template-columns: repeat(
       10,
@@ -60,8 +72,7 @@ export const StyledGridContainer = styled.div`
     );
   }
 
-  @media screen and (max-height: ${({ theme }) => theme.totalHeight.small}),
-    screen and (max-width: ${({ theme }) => theme.breakpoints.small}) {
+  @media screen and (max-height: 630px), screen and (max-width: 660px) {
     grid-template-rows: repeat(
       20,
       ${({ theme }) => theme.squareSizes.extraSmall}px
@@ -72,9 +83,30 @@ export const StyledGridContainer = styled.div`
     );
   }
 
+  // @media screen and (max-height: ${({ theme }) =>
+    theme.totalHeight.medium}) {
+  //   grid-template-rows: repeat(20, ${({ theme }) =>
+    theme.squareSizes.small}px);
+  //   grid-template-columns: repeat(
+  //     10,
+  //     ${({ theme }) => theme.squareSizes.small}px
+  //   );
+  // }
+
   @media screen and (max-height: ${({ theme }) =>
       theme.totalHeight.extraSmall}),
     screen and (max-width: ${({ theme }) => theme.breakpoints.extraSmall}) {
+    grid-template-rows: repeat(20, ${({ theme }) => theme.squareSizes.last}px);
+    grid-template-columns: repeat(
+      10,
+      ${({ theme }) => theme.squareSizes.last}px
+    );
+  }
+
+  // AND
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.small}) and (max-height: 720px) {
     grid-template-rows: repeat(20, ${({ theme }) => theme.squareSizes.last}px);
     grid-template-columns: repeat(
       10,
@@ -467,9 +499,10 @@ box-sizing: border-box;
 export const StyledMessageContainer = styled.div`
   display: flex;
   flex: 1 1 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(calc(-50% - 150px));
+  align-self: center;
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(calc(-50% - 150px));
   justify-content: center;
   align-items: center;
   margin: 0 10px;
@@ -479,15 +512,19 @@ export const StyledMessageContainer = styled.div`
   flex-wrap: wrap;
   border: 2px solid ${({ theme }) => theme.colors.red};
   border-radius: 5px;
-  max-width: 300px;
+  max-width: 250px;
   > p {
     flex: 1 1 100%;
     font-size: 12px;
+
+    &:first-of-type {
+      padding-bottom: 5px;
+    }
   }
 `;
 
 export const StyledGameOver = styled.h2`
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   color: ${({ theme }) => theme.colors.red};
   font-size: 25px;
   flex: 1 1 100%;

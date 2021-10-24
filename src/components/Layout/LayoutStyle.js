@@ -22,7 +22,7 @@ export const StyledMainContent = styled.main`
   color: white;
   flex: 1 1 100%;
   align-content: start;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   @media screen and (max-width: ${({ theme }) => theme.breakpoints.small}) {
     flex-wrap: wrap;
@@ -37,8 +37,8 @@ export const StyledHeader = styled.header`
   align-items: center;
   width: 100%;
   color: white;
-  padding: 40px 0;
-  font-size: 43px;
+  padding: 20px 0;
+  font-size: 45px;
   // text-shadow: 1px 1px 1px blue;
   box-sizing: border-box;
   flex-wrap: wrap;

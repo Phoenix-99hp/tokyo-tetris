@@ -18,7 +18,6 @@ import {
   StyledInner,
   StyledGridContainer,
   StyledMessageContainer,
-  // StyledMessageInner,
   StyledGameOver,
   StyledFinalScoreHeading,
   StyledMoveRotateContainer,
