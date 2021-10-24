@@ -275,7 +275,7 @@ export const StyledNextShapeGrid = styled.div`
       `};
   }
 
-  @media screen and (max-height: ${({ theme }) => theme.totalHeight.small}), {
+  @media screen and (max-height: 630px), {
     ${({ color }) =>
       color &&
       css`
