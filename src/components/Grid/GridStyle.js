@@ -169,6 +169,9 @@ export const StyledNextShapeContainer = styled.div`
         display: block;
         > div {
           margin: 20px auto auto auto;
+          :nth-of-type(1) {
+            width: 130px;
+          }
           :nth-of-type(2) {
             order: 5;
             margin-top: 0;
