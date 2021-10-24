@@ -1,5 +1,6 @@
 {
   "name": "tokyo-tetris",
+  "homepage": "https://phoenix-99hp.github.io/tokyo-tetris/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
