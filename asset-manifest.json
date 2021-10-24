@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ba2c89a.chunk.css",
-    "main.js": "/static/js/main.8c3e14fb.chunk.js",
-    "main.js.map": "/static/js/main.8c3e14fb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.eafa4101.js",
-    "runtime-main.js.map": "/static/js/runtime-main.eafa4101.js.map",
-    "static/js/2.ad17dd89.chunk.js": "/static/js/2.ad17dd89.chunk.js",
-    "static/js/2.ad17dd89.chunk.js.map": "/static/js/2.ad17dd89.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.8ba2c89a.chunk.css.map": "/static/css/main.8ba2c89a.chunk.css.map",
-    "static/js/2.ad17dd89.chunk.js.LICENSE.txt": "/static/js/2.ad17dd89.chunk.js.LICENSE.txt",
-    "static/media/globalFonts.css": "/static/media/GeoramaSemiBoldItalic.187e2526.ttf"
+    "main.css": "/tokyo-tetris/static/css/main.37b01bc2.chunk.css",
+    "main.js": "/tokyo-tetris/static/js/main.8c3e14fb.chunk.js",
+    "main.js.map": "/tokyo-tetris/static/js/main.8c3e14fb.chunk.js.map",
+    "runtime-main.js": "/tokyo-tetris/static/js/runtime-main.d52f72b5.js",
+    "runtime-main.js.map": "/tokyo-tetris/static/js/runtime-main.d52f72b5.js.map",
+    "static/js/2.82116f64.chunk.js": "/tokyo-tetris/static/js/2.82116f64.chunk.js",
+    "static/js/2.82116f64.chunk.js.map": "/tokyo-tetris/static/js/2.82116f64.chunk.js.map",
+    "index.html": "/tokyo-tetris/index.html",
+    "static/css/main.37b01bc2.chunk.css.map": "/tokyo-tetris/static/css/main.37b01bc2.chunk.css.map",
+    "static/js/2.82116f64.chunk.js.LICENSE.txt": "/tokyo-tetris/static/js/2.82116f64.chunk.js.LICENSE.txt",
+    "static/media/globalFonts.css": "/tokyo-tetris/static/media/GeoramaSemiBoldItalic.187e2526.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.eafa4101.js",
-    "static/js/2.ad17dd89.chunk.js",
-    "static/css/main.8ba2c89a.chunk.css",
+    "static/js/runtime-main.d52f72b5.js",
+    "static/js/2.82116f64.chunk.js",
+    "static/css/main.37b01bc2.chunk.css",
     "static/js/main.8c3e14fb.chunk.js"
   ]
 }
