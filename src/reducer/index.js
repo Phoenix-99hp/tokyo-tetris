@@ -6,7 +6,7 @@ import {
   shouldUpdateCoordinatesOnRotate
 } from "../helpers";
 import initialState from "../initialState";
-import { nextShape } from "../data";
+import { ShapeData } from "../data/data";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -297,7 +297,8 @@ const reducer = (state, action) => {
         nextSquares: {
           total: newSquares,
           colored: state.nextShape
-            ? nextShape[state.nextShape.coordinates.toString()].colored
+            ? ShapeData.nextShape[state.nextShape.coordinates.toString()]
+                .colored
             : ""
         }
       };

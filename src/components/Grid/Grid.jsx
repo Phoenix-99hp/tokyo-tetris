@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useReducer, useCallback } from "react";
 import { useTheme } from "styled-components";
 import initialState from "../../initialState";
-import { nextShape } from "../../data";
+import { ShapeData } from "../../data/data";
 import reducer from "../../reducer";
 import {
   StyledNextShapeContainer,
@@ -234,8 +234,8 @@ const Grid = () => {
       dispatch({
         type: "UPDATE_NEXT_SQUARES",
         payload:
-          nextShape[state.nextShape.coordinates.toString()].rows *
-          nextShape[state.nextShape.coordinates.toString()].cols
+          ShapeData.nextShape[state.nextShape.coordinates.toString()].rows *
+          ShapeData.nextShape[state.nextShape.coordinates.toString()].cols
       });
     } else {
       window.removeEventListener("keydown", keydownHandler);
@@ -275,12 +275,16 @@ const Grid = () => {
                   shape={state.nextShape ? state.nextShape.shape.num : ""}
                   cols={
                     state.nextShape
-                      ? nextShape[state.nextShape.coordinates.toString()].cols
+                      ? ShapeData.nextShape[
+                          state.nextShape.coordinates.toString()
+                        ].cols
                       : ""
                   }
                   rows={
                     state.nextShape
-                      ? nextShape[state.nextShape.coordinates.toString()].rows
+                      ? ShapeData.nextShape[
+                          state.nextShape.coordinates.toString()
+                        ].rows
                       : ""
                   }
                 >
@@ -288,8 +292,9 @@ const Grid = () => {
                     <GridItem
                       border={
                         state.nextShape
-                          ? nextShape[state.nextShape.coordinates.toString()]
-                              .border
+                          ? ShapeData.nextShape[
+                              state.nextShape.coordinates.toString()
+                            ].border
                           : ""
                       }
                       color={
