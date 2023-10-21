@@ -157,26 +157,26 @@ export const StyledNextShapeContainer = styled.div`
         order: 3;
         align-items: center;
 
-        > div {
-          :nth-of-type(1) {
-            order: 2;
-          }
-        }
+        // > div {
+        //   :nth-of-type(1) {
+        //     order: 2;
+        //   }
+        // }
       }
 
       @media screen and (max-width: ${({ theme }) =>
           theme.breakpoints.extraSmall}) {
-        display: block;
-        > div {
-          margin: 20px auto auto auto;
-          :nth-of-type(1) {
-            width: 130px;
-          }
-          :nth-of-type(2) {
-            order: 5;
-            margin-top: 0;
-          }
-        }
+        // display: block;
+        // > div {
+        //   margin: 20px auto auto auto;
+        //   :nth-of-type(1) {
+        //     width: 130px;
+        //   }
+        //   :nth-of-type(2) {
+        //     order: 5;
+        //     margin-top: 0;
+        //   }
+        // }
       }
     `}
 `;
@@ -259,7 +259,7 @@ export const StyledNextShapeGrid = styled.div`
       ${({ theme }) => theme.squareSizes.medium}px
     );
   }
-    
+
   @media screen and (max-height: ${({ theme }) => theme.totalHeight.medium}) {
     ${({ color }) =>
       color &&
@@ -502,6 +502,8 @@ overflow: hidden;
 text-overflow: ellipsis;
 box-sizing: border-box;
 
+width: 300px;
+
 @media screen and (max-width: ${({ theme }) => theme.breakpoints.small}){
   padding: 0 10px;
   :nth-of-type(1) {
@@ -557,13 +559,6 @@ export const StyledControlsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-  // flex: 1 1 100%;
-  // height: 150px;
-  // width: 200px;
-  // max-width: 300px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 
   > a {
     font-size: 20px;
@@ -654,7 +649,7 @@ export const StyledButtonControlGroup = styled.div`
 
 
   :nth-of-type(2) {
-    margin-top: 10px;
+    // margin-top: 10px;
     flex: 1 1 100%;
   }
 
@@ -670,9 +665,9 @@ export const StyledButtonControlGroup = styled.div`
 `;
 
 export const StyledDownContainer = styled.div`
-  // border: 1px solid blue;
-  flex: 1 1 100%;
-
+  // // border: 1px solid blue;
+  // flex: 1 1 100%;
+  position: relative;
   // > button {
   //   font-size: 30px;
   //   height: 30px;
@@ -681,12 +676,19 @@ export const StyledDownContainer = styled.div`
   // }
 
   > span {
+    position: absolute;
+    left: 13px;
     cursor: pointer;
     font-size: 30px;
     height: 30px;
     width: 30px;
     padding: 5px;
     box-sizing: border-box;
+
+    @media screen and (max-width: 720px) {
+      left: 12px;
+      top: 10px;
+    }
   }
 
   // display: flex;
@@ -695,9 +697,10 @@ export const StyledDownContainer = styled.div`
 
 export const StyledLeftRightContainer = styled.div`
   // border: 1px solid red;
-  display: flex;
-  flex: 1 1 100%;
+  display: inline-flex;
+  // flex: 1 1 100%;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 
   // > button {
@@ -716,11 +719,22 @@ export const StyledLeftRightContainer = styled.div`
     width: 30px;
     padding: 5px;
     box-sizing: border-box;
+    width: fit-content;
+    margin-top: 0;
+
+    // @media screen and (max-width: 720px) {
+    //   &:first-of-type {
+    //     order: 1;
+    //   }
+    // }
   }
 `;
 
 export const StyledStartPauseButton = styled.button`
   margin-bottom: 20px;
+  border: 1px solid ${({ theme }) => theme.colors.white};
+  padding: 5px;
+  flex: 1 1 100%;
 
   // &:hover {
   //   background-color: ${({ theme }) => theme.colors.green};
