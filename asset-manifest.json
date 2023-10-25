@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/tokyo-tetris/static/css/main.8c46f708.css",
-    "main.js": "/tokyo-tetris/static/js/main.4af1628b.js",
+    "main.js": "/tokyo-tetris/static/js/main.89797507.js",
     "static/media/GeoramaLight.ttf": "/tokyo-tetris/static/media/GeoramaLight.2448f4090bd608c9650d.ttf",
     "static/media/GeoramaLightItalic.ttf": "/tokyo-tetris/static/media/GeoramaLightItalic.fb0522b3698940bf5edc.ttf",
     "static/media/GeoramaSemiBoldItalic.ttf": "/tokyo-tetris/static/media/GeoramaSemiBoldItalic.187e25260a11e83f794c.ttf",
     "index.html": "/tokyo-tetris/index.html",
     "main.8c46f708.css.map": "/tokyo-tetris/static/css/main.8c46f708.css.map",
-    "main.4af1628b.js.map": "/tokyo-tetris/static/js/main.4af1628b.js.map"
+    "main.89797507.js.map": "/tokyo-tetris/static/js/main.89797507.js.map"
   },
   "entrypoints": [
     "static/css/main.8c46f708.css",
-    "static/js/main.4af1628b.js"
+    "static/js/main.89797507.js"
   ]
 }
