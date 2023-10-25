@@ -646,6 +646,9 @@ export const StyledButtonControlGroup = styled.div`
   // border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
 
 
   :nth-of-type(2) {
@@ -668,6 +671,8 @@ export const StyledDownContainer = styled.div`
   // // border: 1px solid blue;
   // flex: 1 1 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
   // > button {
   //   font-size: 30px;
   //   height: 30px;
@@ -676,8 +681,8 @@ export const StyledDownContainer = styled.div`
   // }
 
   > span {
-    position: absolute;
-    left: 13px;
+    position: relative;
+    // left: 13px;
     cursor: pointer;
     font-size: 30px;
     height: 30px;
@@ -686,8 +691,8 @@ export const StyledDownContainer = styled.div`
     box-sizing: border-box;
 
     @media screen and (max-width: 720px) {
-      left: 12px;
-      top: 10px;
+      // left: 12px;
+      // top: 10px;
     }
   }
 
